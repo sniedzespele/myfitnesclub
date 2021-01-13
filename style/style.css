@@ -1,0 +1,443 @@
+body{
+    font:16px/1.6 Arial,  sans-serif;
+}
+.grid-container {
+    padding: 0px 50px 0px 50px;
+    background-color: #201a20;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1px 1px;
+    grid-template-areas:
+      "header header header header"
+      "content1 content1 content1 content1"
+      "content2 content2 content2 content2"
+      "footer footer footer footer";
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+      "navi navi";
+    grid-area: header;
+  }
+  
+  
+  .navi { grid-area: navi; }
+  .content1 { grid-area: content1;
+    padding-bottom: 30px; 
+}
+
+  .content2 {
+      
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px 20px;
+    grid-template-areas:
+      "c1 c2 c3"
+      "c4 c5 c6";
+    grid-area: content2;
+  }
+  .heading{
+    text-decoration:none;
+    color: black;
+  } 
+  h1{
+    font-size:60px;
+  }
+  .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10 {
+    background-color: #a59da5;
+    box-shadow: 5px 10px 18px #46385e;
+    border-radius: 5px;
+
+ }
+ .c1, .c2, .c3, .c4, .c5, .c6{
+   padding: 20px;
+ }
+ .content3 {
+  margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr ;
+    grid-template-rows: auto;
+    gap: 20px 20px;
+    grid-template-areas:
+      "c7 c8 c9 c10"
+      "c11 c12 c13 c14";
+    grid-area: content2;
+  }
+  .c1 {
+    grid-area: c1;
+  }
+ 
+  .c2 { grid-area: c2;}
+  .c3 { grid-area: c3;}
+  .c4 { grid-area: c4; }
+  .c5 { grid-area: c5; }
+  .c6 { grid-area: c6; }
+  .c7 { grid-area: c7; }
+  .c8 { grid-area: c8; }
+  .c9 { grid-area: c9; }
+  .c10 { grid-area: c10; }
+  .c11 { grid-area: c11; }
+  .c12 { grid-area: c12; }
+  .c13 { grid-area: c13; }
+  .c14 { grid-area: c14; }
+  .footer { grid-area: footer; }
+
+  .header {
+    background-color: #201a20;
+    padding: 20px 10px 0px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: rgb(240, 231, 243);
+    text-align: center;
+    padding: 12px;
+    text-decoration:none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    border: 1px solid;
+    padding: 10px;
+    border: none;
+    box-shadow: 5px 10px 18px #46385e;
+    margin: 10px;
+  }
+  
+ 
+ .header img {
+    
+    padding: 12px;
+    width: 16%;
+ }
+  
+  .header a:hover {
+    background-color: #918193;
+    color: black;
+  }
+  
+  .header a.active {
+    
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 10px 18px #46385e;
+  }
+  h2 {text-align: center;}
+  
+  footer{
+
+	bottom: 0;
+}
+/* style and grid for page other.html*/
+
+
+
+
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #655891;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #655891;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.best{
+    text-align: center;
+    color:#a59da5;
+}
+
+/* style for popup */
+.content2 a {
+    text-decoration: none;
+    color: black;
+   justify-self: right;
+
+}
+
+a:hover { text-shadow: 0 0 5px  #655891; }
+
+.overlay_flight_traveldil {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay_flight_traveldil:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup_flight_travlDil {
+  margin: 70px auto;
+  padding: 20px;
+  background-color: #a59da5;
+  box-shadow: 5px 10px 18px #46385e;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+.popup_flight_travlDil .close_flight_travelDl {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup_flight_travlDil .content_flightht_travel_dil {
+  max-height: 30%;
+  overflow: auto;
+}
+
+/* Here is the code for Responsive Footer */
+
+
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+  @media screen and (max-width: 600px) {
+    .header a  {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+    .content2 {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .content3{
+    float: none;
+        display: block;
+        text-align: left;}
+    
+ .header img {
+    
+    padding: 12px;
+    width: 90%;
+ }
+   
+  }
+  /* flip card style*/
+  .flip-card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #201a20;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
